@@ -1,0 +1,60 @@
+<title>About NoobShort</title>
+
+{% extends 'base.html' %}
+
+{% block body %}
+    <div>
+        <h1 class="license_title">About NoobShort</h1>
+        <div class="content_div">
+            <p class="content">
+                NoobShort is a simple url shortener written in python. It is written using the flask module. 
+                You can easily use NoobShort as an template to make your own url shortener by deploying it to <a href="" class="link_text">heroku</a>. 
+                NoobShort is <a href="/license" class="link_text">open source</a> hecne you are free to use it as you like. 
+                If you like, you can clone the <a href="" class="link_text">github</a> repository and you can directly deploy it. 
+                All you have to do is, in the details.txt file, change the application name to your domain. 
+                NoobShort utilizes no other external modules except flask. 
+                NoobShort generates a random 8 digit string of characters and stores the relation and if it ever has to shorten the same url, it returns the same string.
+                <br><br>
+                I wrote NoobShort to practise web development with flask. This is a beginner project. You can go through the <a href="" class="link_text">code</a> on github. If you want your own instance, clone the repository and initialize using heroku.
+            </p>
+            <h1 class="license_title" id="deploy">Deploying</h1>
+            <p class="content">It is quite easy to deploy NoobShort with <a href="" class="link_text">heroku cli</a>. You have to have a heroku account for this though.</p>
+            <p class="content">1. Clone the Github Repository</p>
+            <div class="code_div">
+                <p class="code">git clone https://github.com/newtoallofthis123/NoobShort.git</p>
+            </div>
+            <p class="content">2. login to heroku cli</p>
+            <div class="code_div">
+                <p class="code">heroku login</p>
+            </div>
+            <p class="content">3. Create a new heroku app</p>
+            <div class="code_div">
+                <p class="code">heroku create "app-name"</p>
+            </div>
+            <p class="content">4. Initialize Git and Add</p>
+            <div class="code_div">
+                <p class="code">git init <br> git add .</p>
+            </div>
+            <p class="content">5. Commit and Push</p>
+            <div class="code_div">
+                <p class="code">git commit -m "Commit Message" <br> git push</p>
+            </div>
+            <p class="content">6. Wait for Heroku to build and Done.</p>
+            <div class="code_div">
+                <p class="code">Enjoy NoobShort</p>
+            </div>
+            <h1 class="license_title" id="future">Future</h1>
+            <p class="content" style="text-align: center;">I am still learning flask and in the future, I hope to make NoobShort better</p>
+            <ul style="text-align: center; padding-top: 12px; list-style: none;">
+                <li class="content">Add Url Alias</li>
+                <li class="content">Add a REST API</li>
+                <li class="content">Make Backend Faster</li>
+                <li class="content">Improve the UI</li>
+            </ul>
+            <hr style="margin-top: 12px; margin-bottom: 12px;">
+            <h1 class="license_title">Thanks for Using NoobShort</h1>
+            <hr style="margin-top: 12px; margin-bottom: 12px;">
+            <h1 class="license_title" style="padding-top: 12px; text-align: end; color: #161612;">A Project By NoobScience</h1>
+        </div>
+    </div>
+{% endblock %}

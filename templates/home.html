@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div style="margin-top: 9%;">
+        <h1 class="middle_attraction">NoobShort</h1>
+        <form action="{{ url_for("url")}}" method="post" style="padding-left: 30%;">
+            <input type="text" id="url_original" name="url_original" placeholder="Url To Shorten" style="width: 40%;">
+            <button type="submit" style="background-color: rgba(26, 24, 24, 0); padding-top: 14px; padding-bottom: 14px; border-width: 0px;"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"/></svg></button>
+        </form>
+        <h1 class="title">A Project By NoobScience</h1>
+    </div>
+{% endblock %}
